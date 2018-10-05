@@ -4,10 +4,10 @@ function arrCheck(arr) {
         if (arr[i]===0) {
             nuli++
         }
-        if (arr[i]%2===0 && arr[i]!=0) {
+        if (arr[i]%2===0 && arr[i]!==0) {
             evenNum++;
         }
-        if (arr[i]%2!=0) {
+        if (arr[i]%2!==0) {
             oddNum++;
         }
     }
