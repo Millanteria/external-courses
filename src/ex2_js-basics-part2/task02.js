@@ -4,7 +4,3 @@ function arrInfo(arr) {
     }
     console.log('Число элементов:', arr.length);
 }
-
-var arr=[1,4,5,35,6];
-
-arrInfo(arr);

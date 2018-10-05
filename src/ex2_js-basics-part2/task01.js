@@ -7,9 +7,3 @@ function typeVar (a) {
         console.log('underfined')
     }
 }
-
-var b=10, str='my', arr=[];
-
-typeVar(b);
-typeVar(str);
-typeVar(arr);

@@ -18,6 +18,3 @@ function arrCheck(arr) {
     
     console.log(result);
 }
-
-var arr=[2,4,35,5,7,0,0];
-arrCheck(arr);
