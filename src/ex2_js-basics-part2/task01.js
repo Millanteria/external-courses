@@ -4,6 +4,6 @@ function typeVar (a) {
     } else if (typeof a === 'number') {
         console.log('number')
     } else {
-        console.log('underfined')
+        console.log('undefined')
     }
 }
