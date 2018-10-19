@@ -1,9 +1,9 @@
 function arrEqualElements(arr) {
-    for (var i=0; i<arr.length-1; i++) {
-        if (arr[i]===arr[++i]) {
-        } else {
-            return false;
-        }
+    var element = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] !== element) {
+            return false
+        }      
     }
-    return true;
+    return true
 }
