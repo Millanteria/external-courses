@@ -1,0 +1,10 @@
+var obj={};
+obj.a=10;
+obj.b='ten';
+obj.c={};
+obj.d=[1,2,3];
+obj[15]=15;
+obj.c[1]=12;
+console.log(obj);
+delete obj.c;
+console.log(obj);
