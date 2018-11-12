@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task 4</title>
+        <style>
+            div {
+                position: relative;
+                background-color: #4b35ad;
+                height: 200px;
+                width: 300px;
+            }
+            div::before {
+                position: absolute;
+                content: '';
+                height: 200px;
+                width: 300px;
+                background-color: #ad9aff;
+                top: 20px;
+                left: 20px;
+                z-index: -2;
+            }
+            div::after {
+                position: absolute;
+                content: '';
+                height: 200px;
+                width: 300px;
+                background-color: #795bff;
+                top: 10px;
+                left: 10px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        </div>
+    </body>
+</html>
