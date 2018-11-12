@@ -4,71 +4,57 @@
         <meta charset="utf-8">
         <title>Button</title>
         <style>
-            #first {
-                height: 80px;
-                width: 260px;
-                border: 2px solid #666666;
-                box-shadow: 0 0 4px 1px #d8d8d8;
-                border-radius: 20px;
-                margin: 0 auto;
-                background: #fff;
-            }
-            #grey {
-                position: relative;
-                top: 2px;
-                left: 2px;
-                height: 64px;
-                width: 244px;
-                border: 6px solid #cacaca;
-                border-radius: 16px;
-                background: #cacaca;
-            }
-            #second {
-                height: 54px;
-                width: 234px;
+            a {
+                position: absolute;
+                top: 32px;
+                left: calc(50% -  120px);
                 color: #555555;
-                padding: 5px;
-                border-radius: 12px;
-                box-shadow: 0 0 0 300px rgba(0,0,0,0) inset, .1em .1em .2em #8a8a8a;
+                height: 58px;
+                width: 240px;
+                border-radius: 10px;
+                box-shadow:
+                    2px 2px 2px #8a8a8a,
+                    0px 0px 0px 6px #cacaca,
+                    0px 0px 0px 8px #fff,
+                    0px 0px 0px 10px #666666,
+                    0px 0px 4px 11px #d8d8d8;
                 background: linear-gradient(#dcdcdc, #d3d3d3 48%, #c7c7c7 52%, #aeaeae);
+            }
+            img {
+                height: 27px;
+                width: 27px;
+                filter: drop-shadow(0px 1px 2px #fff);
             }
             table {
                 font-family: Arial;
                 margin: auto;
                 font-size: 19pt;
+                text-shadow: 0px 1px 2px #fff;
             }
             .cell {
                 width: auto;
                 height: 8px;
             }
-            img {
-                height: 27px;
-                width: 27px;
-            }
         </style>
     </head>
     <body>
-        <div id='first'>
-            <div id='grey'>
-                <div id='second'>
-                    <table>
-                        <tr>
-                            <div class='cell'></div>
-                        </tr>
-                        <tr>
-                            <th>
-                                <img src='star.png'>
-                            </th>
-                            <th>
-                                CHECKOUT
-                            </th>
-                            <th>
-                                <img src='star.png'>
-                            </th>
-                        </tr>
-                    </table>            
-                </div>
-            </div>
-        </div>
+        <a href="https://geoguessr.com">
+            <table>
+                <tr>
+                    <div class='cell'></div>
+                </tr>
+                <tr>
+                    <th>
+                        <img src='star.png'>
+                    </th>
+                    <th>
+                        CHECKOUT
+                    </th>
+                    <th>
+                        <img src='star.png'>
+                    </th>
+                </tr>
+            </table>
+        </a>
     </body>
 </html>
