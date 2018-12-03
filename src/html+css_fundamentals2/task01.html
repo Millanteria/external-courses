@@ -44,7 +44,7 @@
                 <p>
                     <label>
                         Age
-                        <input type='text' min=18 max=101>
+                        <input type='number' min=18 max=101>
                     </label>
                 </p>
                 <p>
@@ -73,15 +73,24 @@
                     </label>
                 </p>
                 <p>
-                    Photography
-                    <input type='file' accept=".jpg,.jpeg">
+                    <label for='Photography'>Photography</label>
+                    <input type='file' accept=".jpg,.jpeg" id='Photography'>
                 </p>
                 <hr>
                 <p>
-                    <label>
-                        Title
-                        <input>
-                    </label>
+                    <label for='direction'>Title</label>
+                        <select size=8 id='direction'>
+                            <optgroup label='Technologies'>
+                                <option value=''>Web Master</option>
+                                <option value=''>Database Administrator</option>
+                                <option value=''>Computer-aided Design</option>
+                            </optgroup>
+                            <optgroup label='Finance'>
+                                <option value=''>Economic Planning</option>
+                                <option value=''>Management Accounting</option>
+                                <option value=''>Budgeting and Planning</option>
+                            </optgroup>
+                        </select>
                 </p>
                 <p>
                     <label>
