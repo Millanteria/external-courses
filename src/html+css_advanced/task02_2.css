@@ -1,0 +1,43 @@
+.parent {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 95px);
+}
+.animation {
+    display: grid;
+    grid-template-columns: 20px 150px 20px;
+}
+#ball {
+    position: relative;
+    align-self: center;
+    background-color: lightseagreen;
+    grid-column: 2;
+    width: 30px;
+    height: 30px;
+    box-shadow: inset 0 0 0 1px #000;
+    border-radius: 30px;
+    animation: move 1.5s infinite linear;
+}
+.blocks {
+    height: 65px;
+    width: 20px;
+    background-color: brown;
+    box-shadow: inset 0 0 0 1px #000;
+}
+#block_1 {
+    grid-column: 1;
+}
+#block_2 {
+    grid-column: 3;
+}
+@keyframes move {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 120px; 
+    }
+    100% {
+        left: 0px;
+    }
+}
