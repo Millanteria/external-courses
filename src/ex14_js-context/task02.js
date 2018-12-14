@@ -1,7 +1,7 @@
 function Hangman(word) { 
+    var guessed = []; 
     this.shouldGuess = ''; 
     this.shouldGuessArray = []; 
-    var guessed = []; 
     this.errors = 0; 
     this.guessedString =''; 
     this.wrongSymbols = []; 
