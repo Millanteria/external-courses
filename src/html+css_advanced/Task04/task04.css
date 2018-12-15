@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.header {
+    position: fixed;
+    height: 43px;
+    width: 100%;
+    background-color: #2f364a;
+    z-index: 2;
+}
+.header .links a:hover {
+    color: #fff;
+}
+.user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+        height: 43px;
+    width: 10%;
+    top: 0px;
+    right: 0px;
+    background-color: #15a4fa;
+}
+.user a {
+    font-size: 10pt;
+    color: #fff;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 43px;
+    width: 15%;
+    top: 0px;
+    right: 10%;
+}
+.circle {
+    height: 5px;
+    width: 5px;
+    background-color: #202737;
+    border-radius: 5px;
+}
+.links a {
+    font-size: 10pt;
+    color: #69738c;
+}
+
+.side_left {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background-color: #1f2637;
+    z-index: 1;
+}
+.button_add_book {
+    position: fixed;
+    top: 43px;
+    height: 105px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add_a_book {
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    background-color: #f2795a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add_a_book span{
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 600;
+    color: white;
+}
+
+.line {
+    position: absolute;
+    top: 146px;
+    height: 5px;
+    width: 200px;
+    background-color: #19202e;
+    border-top: 1px solid #141824;
+    border-bottom: 1px solid #282f41;
+}
+#line_1 {
+    top: 146px;
+}
+#line_2 {
+    top: 363px;
+}
+#line_3 {
+    top: 530px;
+}
+
+.main_navigation {
+    position: fixed;
+    top: 137px;
+}
+.choose_menu_b {
+    height: 35px;
+    width: 200px;
+}
+.choose_menu {
+    height: 35px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.main_nav_img {
+    position: fixed;
+    left: 26px;
+}
+
+.choose_menu_b span{
+    position: fixed;
+    left: 50px;
+}
+.main_navigation div:hover{
+    background-color: #15a4fa;
+}
+.main_navigation a span{
+    color: #78829d;
+    font-size: 10pt;
+}
+.main_navigation div:hover span{
+    color: #fff;
+}
+
+.personal_categories {
+    position: fixed;
+    top: 352px;
+}
+.categories_choose {
+    height: 35px;
+    width: 200px;
+}
+.categories span {
+    color: #78829d;
+    font-size: 10pt;
+}
+.coloured_circle {
+    position: absolute;
+    left: 29px;
+    height: 7px;
+    width: 7px;
+    border-radius: 7px;
+}
+.personal_categories ul li span {
+    position: fixed;
+    left: 50px;
+}
+.personal_categories .categories_choose:hover span {
+    color: white;
+}
+#cc_1 {
+    top: 33px;
+    background-color: #e64c66;
+}
+#cc_2 {
+    top: 73px;
+    background-color: #ffab00;
+}
+#cc_3 {
+    top: 113px;
+    background-color: #00bfdd;
+}
+#cc_4 {
+    top: 153px;
+    background-color: #7874cf;
+}
+#cs_1 {
+    top: 380px;
+}
+#cs_2 {
+    top: 420px;
+}
+#cs_3 {
+    top: 460px;
+}
+#cs_4 {
+    top: 500px;
+}
+
+.history_list {
+    width: 200px;
+    bottom: 45px;
+    top: 538px;
+    right: -17px;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.history_list::-webkit-scrollbar {
+    width: 0px;
+}
+.his_img {
+    position: absolute;
+    left: -22px;
+}
+.history_list p {
+    font-size: 8pt;
+    color: #4f5a6f;
+    width: 140px;
+
+}
+.history_1, .history_2, .history_3 {
+    position: relative;
+    left: 30px;
+}
+.history_list p span {
+    color: #69738c;
+    text-transform: capitalize;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    height: 45px;
+    width: 100%;
+    background-color: #181e2c;
+    z-index: 2;
+}
+.support {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2637;
+    height: 45px;
+    width: 45px;
+    right: 45px;
+}
+.setting {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2637;
+    height: 45px;
+    width: 45px;
+}
+.footer div:hover {
+    background-color: #15a4fa;
+}
