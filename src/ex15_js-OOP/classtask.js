@@ -3,13 +3,13 @@ function Shape(name) {
 }
 
 Shape.prototype.draw = function() {
-        console.log(this.type + ' is drawn');
+        return (this.type + ' is drawn')
     }
 Shape.prototype.getPerimeter = function() {
-        console.log('There is no figure');
+        return 'There is no figure';
     }
 Shape.prototype.getType = function() {
-        console.log('Type is ' + this.type);
+        return ('Type is ' + this.type);
     }
 
 function Triangle(a,b,c) {
@@ -19,42 +19,39 @@ function Triangle(a,b,c) {
     this.c = c;
 }
 
-function Square(a,b,c,d) {
-    Shape.call(this, 'Square');
+function Rectangle(a,b) {
+    Shape.call(this, 'Rectangle');
     this.a = a;
     this.b = b;
-    this.c = c;
-    this.d = d;
 }
 
 Triangle.prototype = Object.create(Shape.prototype);
 Triangle.prototype.constructor = Triangle;
 Triangle.prototype.getPerimeter = function() {
-    console.log('Perimeter is ' + (this.a + this.b + this.c));
+    return (this.a + this.b + this.c);
 }
 
-Square.prototype = Object.create(Shape.prototype);
-Square.prototype.constructor = Square;
-Square.prototype.getPerimeter = function() {
-    console.log('Perimeter is ' + (this.a + this.b + this.c + this.d));
-}
-
-function Rectangle(a, b) {
-    Square.call(this, a, b, a, b);
-}
-
-Rectangle.prototype = Object.create(Square.prototype);
+Rectangle.prototype = Object.create(Shape.prototype);
 Rectangle.prototype.constructor = Rectangle;
-Rectangle.prototype.getVolume = function() {
-    console.log('Volume is ' + (this.a * this.b));
+Rectangle.prototype.getPerimeter = function() {
+    return (this.a + this.b + this.a + this.b);
 }
 
-var newRectangle = new Rectangle(5,10);
-newRectangle.getVolume();
-newRectangle.getPerimeter();
-newRectangle.draw();
+function Square(a) {
+    Rectangle.call(this, a, a);
+}
+
+Square.prototype = Object.create(Rectangle.prototype);
+Square.prototype.constructor = Square;
+Square.prototype.getVolume = function() {
+    return (this.a * this.a);
+}
+
+var newSquare = new Square(5);
+console.log('Volume is ' + newSquare.getVolume());
+console.log('Perimeter is ' + newSquare.getPerimeter());
 
 var newTriangle = new Triangle(5,5,5);
-newTriangle.getPerimeter();
-newTriangle.getType();
-newTriangle.draw();
+console.log(newTriangle.draw());
+console.log('Perimeter is ' + newTriangle.getPerimeter());
+console.log(newTriangle.getType());
