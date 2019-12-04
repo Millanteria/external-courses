@@ -1,0 +1,10 @@
+img {
+    width: 400px;
+    height: 400px;
+    clip-path: circle(50% at 50% 50%);
+}
+   
+.pic { 
+    -webkit-mask-size: 400px 400px;
+    -webkit-mask-image: url(cityscape.png); 
+}
